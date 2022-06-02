@@ -1,0 +1,25 @@
+package Modulo_1;
+
+
+import java.util.Scanner;
+
+public class Questao_4 {
+	public static void main(String[] args) {
+		int f=0;
+		int f2=0;
+		int numero;
+		
+		System.out.println("Testador Fibonacci");
+		
+		Scanner entradaDeDados = new  Scanner (System.in);
+		System.out.println("Digite um numero e  descubrar se ele faz parte da sequencia Fibonacci");
+		numero = entradaDeDados.nextInt();
+		
+		for (int i = 1; i <= numero;i+=f2) {
+			f=i-f2;
+			f2=i;
+			System.out.println(f);
+		}
+	}
+
+}
